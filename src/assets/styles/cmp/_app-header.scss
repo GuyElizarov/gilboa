@@ -1,19 +1,44 @@
 header {
     background: rgb(255, 255, 255);
 
-    height: rem(102px);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 
     .header-container {
         padding: rem(20px);
+        height: rem(102px);
 
         .header-left-container {
             gap: rem(35px);
             align-items: flex-end;
 
+
         }
 
-        .header-right-container {}
+        .header-right-container {
+
+            align-items: flex-end;
+
+            .header-right-container-logo {
+                height: rem(85px);
+                width: rem(72px);
+                position: relative;
+
+                img {
+                    position: absolute;
+                    left: 87.3%;
+                    right: -8.3%;
+                    top: 12.82%;
+                    bottom: 7.84%;
+                }
+            }
+
+            .header-right-container-txt {
+
+                h1 {
+                    color: #D97325;
+                }
+            }
+        }
 
     }
 }

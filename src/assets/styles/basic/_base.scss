@@ -11,12 +11,12 @@ html {
 }
 
 body {
-    font-family: 'heebo', sans-serif;
+    font-family: 'Assistant', sans-serif;
 
     margin: 0;
     line-height: rem(25px);
 
-    background-color: #F5F5F5;
+    background-color: $main-bgc-clr;
     direction: rtl;
 
 }
