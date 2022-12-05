@@ -11,7 +11,7 @@ interface RouteStructure {
 
 export const routes: RouteStructure[] = [
     {
-        path: '',
+        path: '/',
         element: Home
     },
     {

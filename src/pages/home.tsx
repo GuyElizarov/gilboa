@@ -1,9 +1,7 @@
-
-
-
+import { Introduction } from '../cmps/home/introduction'
 export const Home = () => {
 
-
-
-    return <h1>home</h1>
+    return <>
+        <Introduction />
+    </>
 }
