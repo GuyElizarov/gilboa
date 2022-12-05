@@ -10,8 +10,8 @@ export function RootCmp() {
   return (
     <Router>
       <AppHeader />
-      <div className="root-cmp">
-        <main className='main-layout'>
+      <div className="root-cmp main-layout">
+        <main >
           <Routes>
             {routes.map((route) => <Route key={route.path} path={route.path} element={<route.element />} />)}
           </Routes>

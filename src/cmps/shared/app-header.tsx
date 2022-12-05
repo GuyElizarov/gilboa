@@ -13,16 +13,19 @@ export const AppHeader = () => {
 
         dispatch(logout())
     }
-    return <header className='flex space-between'>
-        <h1><NavLink to={'/'}>Logo</NavLink></h1>
-        <nav>
-            <NavLink to={'/'}>Home</NavLink>
-            <NavLink to={'/about'}>About</NavLink>
+    return <header className='main-layout '>
+        <div className="header-container flex space-between">
 
-            <NavLink to={'/vote'}>Vote</NavLink>
-            {!user && <NavLink to={'/singup'}>Sing Up</NavLink>}
-            {user && <span onClick={onLogout} style={{ color: "red", cursor: "pointer" }}>logout</span>}
+            <div className="header-right-container">
 
-        </nav>
+            </div>
+            <nav className="header-left-container flex">
+                <NavLink to={'/'}>אודות</NavLink>
+                <NavLink to={'/about'}>תהליך אימוץ</NavLink>
+
+                <NavLink to={'/vote'}>אני רוצה לאמץ</NavLink>
+
+            </nav>
+        </div>
     </header>
 }
