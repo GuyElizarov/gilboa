@@ -40,12 +40,16 @@
             height: rem(220px);
             flex-grow: 1;
 
+            h3 {
+                color: $app-orange;
+            }
+
             img {
-                height: rem(35px);
+                height: rem(32px);
             }
 
             p {
-                font-size: rem(11px);
+                font-size: rem(12px);
                 line-height: rem(15px);
             }
         }
