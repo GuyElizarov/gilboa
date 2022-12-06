@@ -1,16 +1,40 @@
 .introduction {
+    font-size: rem(20px);
+
     p {
         display: flex;
         flex-direction: column;
-        max-width: rem(700px);
+        // max-width: rem(700px);
+    }
+
+    .actions {
+        display: flex;
+        flex-direction: column;
+
+        label {
+            margin-bottom: rem(35px);
+        }
+
+        button {
+            @include button;
+            align-self: flex-start;
+            justify-self: flex-start;
+            // margin: auto;
+            font-size: rem(20px);
+            // padding: rem(14px) rem(45px);
+            display: flex;
+            align-items: center;
+        }
     }
 
     .conditions-list {
         display: flex;
         gap: rem(16px);
+        margin-bottom: rem(35px);
+        // flex-wrap: wrap;
 
         .condition-preview {
-            padding: rem(34px) rem(25px);
+            padding: rem(34px) rem(20px);
             background-color: white;
             width: rem(230px);
             height: rem(330px);
@@ -21,7 +45,7 @@
             }
 
             p {
-                font-size: 19.7px;
+                font-size: rem(16px);
             }
         }
     }
