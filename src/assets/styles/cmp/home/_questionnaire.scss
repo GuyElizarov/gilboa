@@ -7,10 +7,14 @@
     }
 
     .questionnaire-bottom-container {
-        width: 1201px;
-        height: 328px;
+        display: flex;
+        gap: rem(20px);
 
-        .questionnaire-card {}
+        .questionnaire-card {
+            background-color: #fff;
+            width: rem(387px);
+            height: rem(328px);
+        }
     }
 
 }
