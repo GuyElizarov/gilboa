@@ -29,7 +29,7 @@ export const AppHeader = () => {
                 </div>
             </div>
             <nav className="header-left-container flex">
-                <NavLink to={'/'}>אודות</NavLink>
+                <NavLink style={({ isActive }) => ({ color: isActive ? '#26C6DA' : '' })} to={'/'}>אודות</NavLink>
                 <NavLink to={'/about'}>תהליך אימוץ</NavLink>
 
                 <NavLink to={'/vote'}>אני רוצה לאמץ</NavLink>

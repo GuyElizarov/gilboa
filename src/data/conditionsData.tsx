@@ -8,30 +8,30 @@ const text = 'לורם איפסום לורם איפסום לורם איפסום 
 
 export const conditionsData: Condition[] = [
     {
-        name: 'מיקום',
+        title: 'מיקום',
         text,
         imgSrc: LocationImg
     }
     , {
-        name: 'גיל',
+        title: 'גיל',
         text,
         imgSrc: AgeImg
     },
     {
-        name: 'דירה',
+        title: 'דירה',
         text,
         imgSrc: HomeImg
     }, {
-        name: 'גיל',
+        title: 'גיל',
         text,
         imgSrc: AgeImg
     }, {
-        name: 'אחזקה',
+        title: 'אחזקה',
         text,
         imgSrc: MaintenanceImg
     },
     {
-        name: 'סל אימוץ',
+        title: 'סל אימוץ',
         text,
         imgSrc: CartImg
     }
