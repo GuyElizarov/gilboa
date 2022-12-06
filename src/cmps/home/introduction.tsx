@@ -1,5 +1,6 @@
+import { ConditionList } from './conditions-list'
 
-const conditions = ['מיקום', 'גיל', 'דירה', 'אחזקה', 'סל אימוץ']
+
 export const Introduction = () => {
     return <section className="introduction">
         <p>
@@ -10,5 +11,6 @@ export const Introduction = () => {
                 אז לפני שמתחילים, חשוב לנו לוודא איתכם כמה דברים :)
             </span>
         </p>
+        <ConditionList />
     </section>
 }

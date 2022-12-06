@@ -2,5 +2,27 @@
     p {
         display: flex;
         flex-direction: column;
+        max-width: rem(700px);
+    }
+
+    .conditions-list {
+        display: flex;
+        gap: rem(16px);
+
+        .condition-preview {
+            padding: rem(34px) rem(25px);
+            background-color: white;
+            width: rem(230px);
+            height: rem(330px);
+            flex-grow: 1;
+
+            img {
+                height: rem(62px);
+            }
+
+            p {
+                font-size: 19.7px;
+            }
+        }
     }
 }
