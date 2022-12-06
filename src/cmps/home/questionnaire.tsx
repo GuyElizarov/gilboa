@@ -1,3 +1,7 @@
+import dog from "../../assets/imgs/dog.png"
+import clock from "../../assets/imgs/clock.png"
+import baby from "../../assets/imgs/baby.png"
+
 export const Questionnaire = () => {
 
 
@@ -8,9 +12,15 @@ export const Questionnaire = () => {
             <span>אל תדאגו - תמיד אפשר לשנות את התשובות שלכם בדף X (או לחזור אחורה).</span>
         </div>
         <div className="questionnaire-bottom-container flex">
-            <div className="questionnaire-card app-card"></div>
-            <div className="questionnaire-card app-card"></div>
-            <div className="questionnaire-card app-card"></div>
+            <div className="questionnaire-card app-card">
+                <img src={dog} alt="" />
+            </div>
+            <div className="questionnaire-card app-card">
+                <img src={clock} alt="" />
+            </div>
+            <div className="questionnaire-card app-card">
+                <img src={baby} alt="" />
+            </div>
         </div>
 
     </div>
