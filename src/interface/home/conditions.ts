@@ -4,3 +4,9 @@ export interface Condition {
     imgSrc: string
 }
 
+export interface QuestionnaireCard {
+    title: string,
+    imgSrc: string,
+    answers: string[]
+}
+
