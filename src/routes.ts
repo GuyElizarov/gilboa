@@ -22,5 +22,10 @@ export const routes: RouteStructure[] = [
 
         path: '/singup',
         element: LoginSignup
-    }
+    },
+    {
+
+        path: '/login',
+        element: LoginSignup
+    },
 ]

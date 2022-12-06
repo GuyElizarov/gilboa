@@ -22,7 +22,10 @@ export const AppHeader = () => {
                 </div>
                 <div className="header-right-container-txt flex column space-between">
                     <h1>גלבוע אוהבת חיות</h1>
-                    <span>היי אורח! התחבר</span>
+                    <div>
+                        <span>היי אורח! </span>
+                        <NavLink to={'/login'}>התחבר</NavLink>
+                    </div>
                 </div>
             </div>
             <nav className="header-left-container flex">
