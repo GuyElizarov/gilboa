@@ -1,5 +1,5 @@
 export interface Condition {
-    name: string,
+    title: string,
     text: string
     imgSrc: string
 }
