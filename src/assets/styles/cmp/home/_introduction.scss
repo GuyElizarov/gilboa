@@ -34,18 +34,19 @@
         // flex-wrap: wrap;
 
         .condition-preview {
-            padding: rem(34px) rem(20px);
+            padding: rem(20px) rem(20px);
             background-color: white;
             width: rem(230px);
-            height: rem(330px);
+            height: rem(220px);
             flex-grow: 1;
 
             img {
-                height: rem(62px);
+                height: rem(35px);
             }
 
             p {
-                font-size: rem(16px);
+                font-size: rem(11px);
+                line-height: rem(15px);
             }
         }
     }
