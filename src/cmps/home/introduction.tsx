@@ -14,7 +14,7 @@ export const Introduction = () => {
         <ConditionList />
         <div className='actions'>
             <label htmlFor="accept">
-                <input type="checkbox" name="" id="accept" /><span>אני מאשר</span>
+                <input className='styled' type="checkbox" name="" id="accept" /><span>אני מאשר</span>
             </label>
             <button>להיכרות אישית&#62;&#62;</button>
         </div>
