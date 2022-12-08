@@ -21,10 +21,6 @@ export const conditionsData: Condition[] = [
         imgSrc: AgeImg
     },
     {
-        title: 'דירה',
-        text,
-        imgSrc: HomeImg
-    }, {
         title: 'גיל',
         text,
         imgSrc: AgeImg
