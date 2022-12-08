@@ -16,6 +16,8 @@
             width: rem(135px);
         }
 
+        @include app-checkbox($size: 30px);
+
         button {
             @include button;
             align-self: flex-start;

@@ -13,8 +13,8 @@ export const Introduction = () => {
         </p>
         <ConditionList />
         <div className='actions'>
-            <label htmlFor="accept">
-                <input className='styled' type="checkbox" name="" id="accept" /><span>אני מאשר</span>
+            <label  htmlFor="accept">
+                <input className='app-big-checkbox' type="checkbox" name="" id="accept" /><span>אני מאשר</span>
             </label>
             <button>להיכרות אישית&#62;&#62;</button>
         </div>

@@ -1,7 +1,7 @@
 const dog = [
     {
         _id: "HF645FH",
-        name: 'puki',
+        name: 'Puki',
         imgSrc: {
             thumbnail: "sdfsdfsdf",
             imgs: ["dsfgdsfg", "sdfsdfsdf"]

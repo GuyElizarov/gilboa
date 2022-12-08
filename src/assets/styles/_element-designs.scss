@@ -1,45 +1,56 @@
-label {
-    display: flex;
-    align-items: center;
+// label {
+//     display: flex;
+//     align-items: center;
 
-    input[type='checkbox'].styled {
-        appearance: none;
-        -webkit-appearance: none;
-        border: 1px solid #d5d5d5;
-        height: 25px;
-        position: relative;
-        width: 25px;
-        background-color: white;
-        cursor: pointer;
-        display: flex;
-        align-items: center;
-        justify-content: center;
+//     input[type='checkbox'].app-checkbox {
+//         appearance: none;
+//         -webkit-appearance: none;
+//         border: 1px solid #d5d5d5;
+//         height: 21px;
+//         position: relative;
+//         width: 21px;
+//         background-color: white;
+//         cursor: pointer;
+//         display: flex;
+//         align-items: center;
+//         justify-content: center;
 
-        &:after {
-            content: 'v';
-            position: absolute;
-            transform: translateY(-1px);
-            background-position: center;
-            background-size: cover;
-            background-size: auto 100%;
-            font-size: 25px;
-            font-weight: bold;
-            background-repeat: no-repeat;
-            display: none;
-            color: white;
-        }
+//         &:after {
+//             content: 'v';
+//             position: absolute;
+//             transform: translateY(-1px);
+//             background-position: center;
+//             background-size: cover;
+//             background-size: auto 100%;
+//             font-size: 21px;
+//             font-weight: bold;
+//             background-repeat: no-repeat;
+//             display: none;
+//             color: white;
+//         }
 
-        &:hover {
-            background-color: #d5d5d5;
-        }
+//         &:hover {
+//             background-color: #d5d5d5;
+//         }
 
-        &:checked {
-            background-color: #26C6DA;
-            border-color: #26C6DA;
-        }
+//         &:checked {
+//             background-color: #26C6DA;
+//             border-color: #26C6DA;
+//         }
 
-        &:checked:after {
-            display: flex;
-        }
-    }
-}
+//         &:checked:after {
+//             display: flex;
+//         }
+//     }
+
+
+// }
+
+// .app-big-checkbox {
+//     @include app-checkbox($size: 30px);
+// }
+
+
+// .app-small-checkbox {
+//     @include app-checkbox;
+// }
