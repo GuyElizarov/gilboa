@@ -128,7 +128,7 @@
 @mixin app-checkbox ($size: rem(21px)) {
     label {
         display: flex;
-        align-items: center;
+        align-items: flex-start;
 
         input[type='checkbox'] {
             appearance: none;

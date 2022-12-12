@@ -12,4 +12,6 @@ export interface QuestionnaireCard {
 
 export type AdoptionStages = 'first' | 'second' | 'third' | 'forth'
 
+export type PreviewTypes = 'dog' | 'questionnaire' | 'condition'
+
 
