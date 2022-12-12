@@ -1,6 +1,6 @@
 import { Condition, PreviewTypes, QuestionnaireCard } from "../../interface/home/home-interface";
 import { Dog } from "../../interface/shared/dogs-interface";
-import { ConditionPreview } from "./condition-preview";
+// import { FirstStagePreview } from "./condition-preview";
 
 export const DynamicList = ({ type, content }: { type: PreviewTypes, content: Condition[] | QuestionnaireCard[] | Dog[] }) => {
     // switch (type){
@@ -13,7 +13,6 @@ export const DynamicList = ({ type, content }: { type: PreviewTypes, content: Co
     //         return <div className=""></div>
     // }
     return <div></div>
-
 
 
 }
