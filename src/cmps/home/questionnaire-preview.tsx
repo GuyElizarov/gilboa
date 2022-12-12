@@ -1,4 +1,4 @@
-import { QuestionnaireCard } from "../../interface/home/conditions"
+import { QuestionnaireCard } from "../../interface/home/home-interface"
 
 export const QuestionnairePreview = ({ cardInfo }: { cardInfo: QuestionnaireCard }) => {
 
