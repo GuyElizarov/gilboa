@@ -1,7 +1,7 @@
 import { Condition } from "../../interface/home/home-interface"
 
-export const ConditionPreview = ({ condition }: { condition: Condition }) => {
-    return <article className="condition-preview app-card">
+export const FirstStageConditionPreview = ({ condition }: { condition: Condition }) => {
+    return <article className="first-stage-condition-preview app-card">
         <div className="img-wrapper">
             <img src={condition.imgSrc} alt="" />
         </div>

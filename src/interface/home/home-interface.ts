@@ -10,7 +10,7 @@ export interface QuestionnaireCard {
     answers: string[]
 }
 
-export type AdoptionStages = 'first' | 'second' | 'third' | 'forth'
+export type AdoptionStages = 'first' | 'second' | 'third' | 'forth' | 'fifth'
 
 export type PreviewTypes = 'dog' | 'questionnaire' | 'condition'
 
