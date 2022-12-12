@@ -1,6 +1,6 @@
 import { QuestionnaireCard } from "../../interface/home/home-interface"
 
-export const QuestionnairePreview = ({ cardInfo }: { cardInfo: QuestionnaireCard }) => {
+export const SecondStageQuestionnairePreview = ({ cardInfo }: { cardInfo: QuestionnaireCard }) => {
 
     const { title, imgSrc, answers } = cardInfo
     return <div className="questionnaire-card app-card">

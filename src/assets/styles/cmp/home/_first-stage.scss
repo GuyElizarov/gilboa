@@ -1,4 +1,4 @@
-.introduction {
+.first-stage-introduction {
     // font-size: rem(20px);
 
     p {
@@ -23,13 +23,13 @@
         }
     }
 
-    .conditions-list {
+    .first-stage-conditions-list {
         display: flex;
         gap: rem(16px);
         margin-bottom: rem(35px);
         // flex-wrap: wrap;
 
-        .condition-preview {
+        .first-stage-condition-preview {
             padding: rem(20px) rem(20px);
             background-color: white;
             width: rem(230px);
