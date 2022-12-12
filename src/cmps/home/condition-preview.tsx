@@ -1,4 +1,4 @@
-import { Condition } from "../../interface/home/conditions"
+import { Condition } from "../../interface/home/home-interface"
 
 export const ConditionPreview = ({ condition }: { condition: Condition }) => {
     return <article className="condition-preview app-card">

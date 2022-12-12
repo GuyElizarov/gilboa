@@ -1,4 +1,4 @@
-import { Condition, QuestionnaireCard } from "../interface/home/conditions";
+import { Condition, QuestionnaireCard } from "../interface/home/home-interface";
 import HomeImg from '../assets/imgs/home.png'
 import AgeImg from '../assets/imgs/age.png'
 import LocationImg from '../assets/imgs/location.png'
@@ -21,7 +21,7 @@ export const conditionsData: Condition[] = [
         imgSrc: AgeImg
     },
     {
-        title: 'גיל',
+        title: 'דירה',
         text,
         imgSrc: AgeImg
     }, {
