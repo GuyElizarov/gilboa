@@ -1,8 +1,8 @@
 import { ChangeEvent, useState } from 'react'
-import { ConditionList } from './conditions-list'
+import { FirstStageConditionList } from './first-stage-conditions-list'
 
 
-export const Introduction = ({ setAdoptionProcessStage }: { setAdoptionProcessStage: Function }) => {
+export const FirstStage = ({ setAdoptionProcessStage }: { setAdoptionProcessStage: Function }) => {
     const [isAccept, setIsAccept] = useState<boolean>(false)
 
 
@@ -15,7 +15,7 @@ export const Introduction = ({ setAdoptionProcessStage }: { setAdoptionProcessSt
         setAdoptionProcessStage('second')
     }
 
-    return <section className="introduction">
+    return <section className="first-stage-introduction">
         <p>
             <span> תודה שבחרת לאמץ כלב אצלנו!</span>
             <span>
@@ -24,7 +24,7 @@ export const Introduction = ({ setAdoptionProcessStage }: { setAdoptionProcessSt
                 אז לפני שמתחילים, חשוב לנו לוודא איתכם כמה דברים :)
             </span>
         </p>
-        <ConditionList />
+        <FirstStageConditionList />
         <div className='actions'>
             <label htmlFor="accept">
                 <input className='app-big-checkbox' type="checkbox" name="" id="accept" onChange={setAnswer} /><span>אני מאשר</span>
