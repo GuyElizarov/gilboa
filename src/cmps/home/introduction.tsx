@@ -1,7 +1,20 @@
+import { ChangeEvent, useState } from 'react'
 import { ConditionList } from './conditions-list'
 
 
-export const Introduction = () => {
+export const Introduction = ({ setAdoptionProcessStage }: { setAdoptionProcessStage: Function }) => {
+    const [isAccept, setIsAccept] = useState<boolean>(false)
+
+
+    const setAnswer = (ev: ChangeEvent<HTMLInputElement>) => {
+        setIsAccept(ev.target.checked)
+    }
+
+    const onBeginAdoptionProcess = () => {
+        if (!isAccept) return
+        setAdoptionProcessStage('second')
+    }
+
     return <section className="introduction">
         <p>
             <span> תודה שבחרת לאמץ כלב אצלנו!</span>
@@ -13,10 +26,10 @@ export const Introduction = () => {
         </p>
         <ConditionList />
         <div className='actions'>
-            <label  htmlFor="accept">
-                <input className='app-big-checkbox' type="checkbox" name="" id="accept" /><span>אני מאשר</span>
+            <label htmlFor="accept">
+                <input className='app-big-checkbox' type="checkbox" name="" id="accept" onChange={setAnswer} /><span>אני מאשר</span>
             </label>
-            <button>להיכרות אישית&#62;&#62;</button>
+            <button onClick={onBeginAdoptionProcess}>להיכרות אישית&#62;&#62;</button>
         </div>
     </section>
 }
