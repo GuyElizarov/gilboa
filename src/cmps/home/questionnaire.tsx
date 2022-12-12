@@ -5,7 +5,7 @@ export const Questionnaire = () => {
 
 
     return <div className="questionnaire">
-        <p>
+        <p className="flex column">
 
             <span>אז אחרי שהבנתם מה נדרש ממכם כדי לאמץ כלב, </span>
             <span>נשארו לנו עוד כמה שאלות קטנות לפני שתוכלו לפגוש את החבר הכי טוב החדש שלכם 🐶.</span>
@@ -13,6 +13,7 @@ export const Questionnaire = () => {
         </p>
         <QuestionnaireList />
         
+        <button>הצג התאמות &#62;&#62;</button>
 
     </div>
 }

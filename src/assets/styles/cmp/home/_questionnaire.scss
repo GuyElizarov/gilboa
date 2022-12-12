@@ -1,9 +1,8 @@
 .questionnaire {
-    margin-top: 100px;
 
     p {
         max-width: rem(1180px);
-
+        font-size: rem(20px);
     }
 
     .questionnaire-list {
@@ -14,10 +13,23 @@
             background-color: #fff;
             width: rem(387px);
             height: rem(328px);
-            .questions{
-                @include app-checkbox
+            padding: rem(33px) rem(25px);
+
+            h1 {
+                color: $app-orange;
+                font-size: 29.65px;
+                padding-top: 18px;
+            }
+
+            .questions {
+                padding-top: rem(4.5px);
+                @include app-checkbox;
             }
         }
     }
 
+    button {
+        @include button;
+        margin-top:  rem(77px);
+    }
 }
