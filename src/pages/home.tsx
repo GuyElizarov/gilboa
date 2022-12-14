@@ -16,9 +16,10 @@ export const Home = () => {
         return <>
 
                 {adoptionProcessStage === 'first' && <FirstStage setAdoptionProcessStage={setAdoptionProcessStage} />}
-                {adoptionProcessStage === 'second' && <SecondStage setAdoptionProcessStage={setAdoptionProcessStage}/>}
+                {adoptionProcessStage === 'second' && <SecondStage setAdoptionProcessStage={setAdoptionProcessStage} />}
                 {adoptionProcessStage === 'third' && <ThirdStage setAdoptionProcessStage={setAdoptionProcessStage} />}
                 {adoptionProcessStage === 'forth' && <ForthStage setAdoptionProcessStage={setAdoptionProcessStage} />}
+                <ThirdStage setAdoptionProcessStage={setAdoptionProcessStage} />
 
         </>
 }
