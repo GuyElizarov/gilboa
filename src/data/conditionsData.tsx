@@ -7,6 +7,8 @@ import CartImg from '../assets/imgs/cart.png'
 import DogImg from '../assets/imgs/dog.png'
 import ClockImg from '../assets/imgs/clock.png'
 import BabyImg from '../assets/imgs/baby.png'
+import TreeImg from '../assets/imgs/tree.png'
+import HartImg from '../assets/imgs/hart.png'
 const text = 'לורם איפסום לורם איפסום לורם איפסום לורם איפסום לורם איפסום לורם איפסום לורם איפסום לורם איפסום לורם איפסום '
 
 export const conditionsData: Condition[] = [
@@ -35,7 +37,7 @@ export const conditionsData: Condition[] = [
         imgSrc: CartImg
     }
 ]
-export const questionnaireData: QuestionnaireCard[] = [
+export const secondSageQuestionnaireData: QuestionnaireCard[] = [
     {
         title: 'האם היו לך כלבים בעבר?',
         imgSrc: DogImg,
@@ -50,6 +52,24 @@ export const questionnaireData: QuestionnaireCard[] = [
         title: 'מה הגיל הכי קטן בבית?',
         imgSrc: BabyImg,
         answers: ['מתחת לגיל 8', 'בין 8-16', 'מעל 16']
+    },
+
+]
+export const forthStageQuestionnaireData: QuestionnaireCard[] = [
+    {
+        title: 'איפה הכלב יחיה?',
+        imgSrc: HartImg,
+        answers: ['הכלב יהיה איתנו בתוך הבית', 'יש לנו חצר/מרפסת מפנקת בשבילו', 'גם בבית וגם בחצר, אבל ישן רק בבית', '(היו לי ____ כלבים בעבר (צריך מספר']
+    },
+    {
+        title: 'כמה שעות הכלב יהיה לבד?',
+        imgSrc: ClockImg,
+        answers: ['1-4 שעות ביום', '4-7 שעות ביום', '7-10 שעות ביום', '10 ומעלה']
+    },
+    {
+        title: 'יש לך חצר?',
+        imgSrc: TreeImg,
+        answers: ['מגודרת', 'לא מגודרת', 'אין לי חצר']
     },
 
 ]

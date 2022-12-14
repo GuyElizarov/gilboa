@@ -10,7 +10,7 @@ export const FirstStage = ({ setAdoptionProcessStage }: { setAdoptionProcessStag
         setIsAccept(ev.target.checked)
     }
 
-    const onBeginAdoptionProcess = () => {
+    const onchangeAdoptionProcess = () => {
         if (!isAccept) return
         setAdoptionProcessStage('second')
     }
@@ -29,7 +29,7 @@ export const FirstStage = ({ setAdoptionProcessStage }: { setAdoptionProcessStag
             <label htmlFor="accept">
                 <input className='app-big-checkbox' type="checkbox" name="" id="accept" onChange={setAnswer} /><span>אני מאשר</span>
             </label>
-            <button onClick={onBeginAdoptionProcess}>להיכרות אישית&#62;&#62;</button>
+            <button onClick={onchangeAdoptionProcess}>להיכרות אישית&#62;&#62;</button>
         </div>
     </section>
 }

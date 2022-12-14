@@ -1,11 +1,13 @@
-.second-stage-questionnaire {
+
+.questionnaire {
 
     p {
         max-width: rem(1180px);
         font-size: rem(20px);
+        margin-top: rem(53px);
     }
 
-    .second-stage-questionnaire-list {
+    .questionnaire-list {
         display: flex;
         gap: rem(20px);
 
