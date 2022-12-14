@@ -1,8 +1,8 @@
 html {
-    font-size: rem(17.77px);
+    font-size: 17.77px;
 
     @include for-normal-layout {
-        font-size: rem(19.77px);
+        font-size: 19.77px;
     }
 }
 

@@ -5,5 +5,13 @@ export const ThirdStageDogPreview = ({ dog }: { dog: Dog }) => {
         <div className="dog-image-wrapper">
             <img src={dog.imgSrc.thumbnail} alt="" />
         </div>
+        <div className="actions">
+            <div className="button-left-wrapper">
+                <button></button>
+            </div>
+            <div className="button-right-wrapper">
+                <button></button>
+            </div>
+        </div>
     </article>
 }
