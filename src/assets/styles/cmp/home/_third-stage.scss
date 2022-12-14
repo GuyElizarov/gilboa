@@ -1,13 +1,13 @@
 .third-stage-dog-list {
     display: grid;
-    gap: rem(20px);
+    gap: rem(16px);
     grid-template-columns: repeat(3, 1fr);
 
     .dog-preview {
         background-color: white;
-        // max-width: rem(387px);
+        max-width: rem(387px);
         // min-width: rem(387px);
-        height: rem(282.65px);
+        height: rem(386.95px);
         overflow: hidden;
         flex-grow: 1;
         display: flex;
@@ -16,7 +16,7 @@
 
         .dog-image-wrapper {
             width: 100%;
-            height: rem(200px);
+            height: rem(257px);
 
             img {
                 // display: none;
@@ -31,15 +31,24 @@
         .actions {
             display: flex;
             flex-grow: 1;
+            flex-direction: column;
 
             &>* {
-                width: 50%;
-                display: flex;
-                justify-content: center;
-                align-items: center;
+                height: 50%;
+                width: 100%;
+
             }
 
-            .button-right-wrapper {}
+            .bottom-actions {
+                display: flex;
+
+                &>* {
+                    flex-grow: 1;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+            }
         }
     }
 }

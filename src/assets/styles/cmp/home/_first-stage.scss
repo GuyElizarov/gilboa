@@ -14,7 +14,11 @@
 
     .first-stage-conditions-list {
         display: flex;
+
+        // grid-template-columns: repeat(5, 1fr);
         gap: rem(16px);
+        flex-wrap: wrap;
+
         margin-bottom: rem(35px);
         flex-wrap: wrap;
 
