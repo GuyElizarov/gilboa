@@ -8,8 +8,10 @@
     .second-stage-questionnaire-list {
         display: flex;
         gap: rem(20px);
+        flex-wrap: wrap;
 
         .questionnaire-card {
+            flex-grow: 1;
             background-color: #fff;
             width: rem(387px);
             height: rem(328px);
@@ -30,6 +32,6 @@
 
     button {
         @include button;
-        margin-top:  rem(77px);
+        margin-top: rem(77px);
     }
 }
