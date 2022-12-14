@@ -5,6 +5,10 @@
         display: flex;
         flex-direction: column;
         // max-width: rem(700px);
+        font-size: rem(30px);
+        line-height: rem(36px);
+        margin-top: rem(53px);
+        margin-bottom: rem(36px);
     }
 
     .actions {
@@ -25,28 +29,30 @@
 
     .first-stage-conditions-list {
         display: flex;
-        gap: rem(16px);
+        gap: rem(17px);
         margin-bottom: rem(35px);
         // flex-wrap: wrap;
 
         .first-stage-condition-preview {
             padding: rem(20px) rem(20px);
             background-color: white;
-            width: rem(230px);
-            height: rem(220px);
-            flex-grow: 1;
+            width: rem(227px);
+            height: rem(330px);
+            // flex-grow: 1;
 
             h3 {
                 color: $app-orange;
+                font-family: 'assistant-bold';
+                font-size: rem(30px);
+                margin-top: rem(15px);
             }
 
             img {
-                height: rem(32px);
+                height: rem(62px);
             }
 
             p {
-                // font-size: rem(12px);
-                line-height: rem(15px);
+               margin: 0;
             }
         }
     }
