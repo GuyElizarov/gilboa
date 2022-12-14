@@ -1,9 +1,9 @@
 import { Condition, QuestionnaireCard } from "../interface/home/home-interface";
-import HomeImg from '../assets/imgs/home.png'
-import AgeImg from '../assets/imgs/age.png'
-import LocationImg from '../assets/imgs/location.png'
-import MaintenanceImg from '../assets/imgs/maintenance.png'
-import CartImg from '../assets/imgs/cart.png'
+import HomeImg from '../assets/imgs/stage1/home.png'
+import AgeImg from '../assets/imgs/stage1/age.png'
+import LocationImg from '../assets/imgs/stage1/location.png'
+import MaintenanceImg from '../assets/imgs/stage1/maintenance.png'
+import CartImg from '../assets/imgs/stage1/cart.png'
 import DogImg from '../assets/imgs/dog.png'
 import ClockImg from '../assets/imgs/clock.png'
 import BabyImg from '../assets/imgs/baby.png'
@@ -25,7 +25,7 @@ export const conditionsData: Condition[] = [
     {
         title: 'דירה',
         text,
-        imgSrc: AgeImg
+        imgSrc: HomeImg
     }, {
         title: 'אחזקה',
         text,
