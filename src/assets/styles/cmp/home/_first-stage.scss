@@ -16,7 +16,8 @@
         // display: grid;
         display: flex;
         // grid-template-columns: repeat(5, 1fr);
-        // gap: rem(16px);
+        gap: rem(16px);
+        flex-wrap: wrap;
         margin-bottom: rem(35px);
 
         .first-stage-condition-preview {
@@ -36,10 +37,10 @@
                 height: rem(62px);
             }
 
-           
+
         }
     }
-    
+
     .actions {
         display: flex;
         flex-direction: column;
