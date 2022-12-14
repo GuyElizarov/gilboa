@@ -1,12 +1,13 @@
 .third-stage-dog-list {
-    display: flex;
+    display: grid;
     gap: rem(20px);
     flex-wrap: wrap;
+    grid-template-columns: repeat(3, 1fr);
 
     .dog-preview {
         background-color: white;
-        max-width: rem(387px);
-        min-width: rem(387px);
+        // max-width: rem(387px);
+        // min-width: rem(387px);
         height: rem(282.65px);
         overflow: hidden;
         flex-grow: 1;

@@ -16,7 +16,7 @@ export const FirstStage = ({ setAdoptionProcessStage }: { setAdoptionProcessStag
     }
 
     return <section className="first-stage-introduction">
-        <p>
+        <p className='intro-txt'>
             <span> תודה שבחרת לאמץ כלב אצלנו!</span>
             <span>
                 כל כלב הוא עולם ומלואו, חשוב לנו ליצור התאמה מירבית בין העדפותיך לצרכי הכלב, ולכן חשוב לנו שהמענה לשאלות הבאות יהיה אמיתי וכנה. אנחנו עושים את מירב המאמצים לתת לך את הכלב שמתאים לך וכל כלב את המקום הראוי לו. תודה רבה!</span>

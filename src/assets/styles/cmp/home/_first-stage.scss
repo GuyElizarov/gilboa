@@ -1,7 +1,7 @@
 .first-stage-introduction {
     // font-size: rem(20px);
 
-    p {
+    .intro-txt {
         display: flex;
         flex-direction: column;
         // max-width: rem(700px);
@@ -11,6 +11,35 @@
         margin-bottom: rem(36px);
     }
 
+
+    .first-stage-conditions-list {
+        // display: grid;
+        display: flex;
+        // grid-template-columns: repeat(5, 1fr);
+        // gap: rem(16px);
+        margin-bottom: rem(35px);
+
+        .first-stage-condition-preview {
+            padding: rem(34px) rem(26px) rem(33.5px) rem(24px);
+            background-color: white;
+            width: rem(227px);
+            height: rem(329px);
+            // flex-grow: 1;
+
+            h3 {
+                color: $app-orange;
+                font-size: rem(30px);
+                margin-top: rem(15px);
+            }
+
+            img {
+                height: rem(62px);
+            }
+
+           
+        }
+    }
+    
     .actions {
         display: flex;
         flex-direction: column;
@@ -24,36 +53,6 @@
 
         button {
             @include button;
-        }
-    }
-
-    .first-stage-conditions-list {
-        display: flex;
-        gap: rem(17px);
-        margin-bottom: rem(35px);
-        // flex-wrap: wrap;
-
-        .first-stage-condition-preview {
-            padding: rem(20px) rem(20px);
-            background-color: white;
-            width: rem(227px);
-            height: rem(330px);
-            // flex-grow: 1;
-
-            h3 {
-                color: $app-orange;
-                font-family: 'assistant-bold';
-                font-size: rem(30px);
-                margin-top: rem(15px);
-            }
-
-            img {
-                height: rem(62px);
-            }
-
-            p {
-               margin: 0;
-            }
         }
     }
 }
