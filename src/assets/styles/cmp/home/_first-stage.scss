@@ -24,7 +24,9 @@
     }
 
     .first-stage-conditions-list {
-        display: flex;
+        display: grid;
+        // flex-wrap: wrap;
+        grid-template-columns: repeat(5, 1fr);
         gap: rem(16px);
         margin-bottom: rem(35px);
         // flex-wrap: wrap;
@@ -32,8 +34,8 @@
         .first-stage-condition-preview {
             padding: rem(20px) rem(20px);
             background-color: white;
-            width: rem(230px);
-            height: rem(220px);
+            // width: rem(230px);
+            height: rem(329px);
             flex-grow: 1;
 
             h3 {
@@ -41,7 +43,7 @@
             }
 
             img {
-                height: rem(32px);
+                height: rem(62px);
             }
 
             p {
