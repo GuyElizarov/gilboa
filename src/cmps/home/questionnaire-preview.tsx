@@ -8,7 +8,9 @@ export const QuestionnairePreview = ({ cardInfo }: { cardInfo: QuestionnaireCard
         <h1>{title}</h1>
         <div className="questions flex column">
 
-            {answers.map(answer => <label className="app-small-checkbox" > <input type="checkbox" /> {answer} </label>)}
+            {answers.map(answer => <label className="app-small-checkbox" >
+                <input type="checkbox" /><span> {answer} </span>
+            </label>)}
         </div>
     </div>
 }

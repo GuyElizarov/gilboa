@@ -37,10 +37,11 @@
     border-radius: 15px;
     align-self: flex-start;
     justify-self: flex-start;
-    font-size: rem(20px);
+    font-size: rem(30px);
     display: flex;
     align-items: center;
-
+    width: rem(318px);
+    height: rem(66.25px);
     &:hover,
     &:active {}
 
@@ -128,8 +129,7 @@
 @mixin app-checkbox ($size: rem(21px)) {
     label {
         display: flex;
-        align-items: flex-start;
-
+        align-items: center;
         input[type='checkbox'] {
             appearance: none;
             -webkit-appearance: none;

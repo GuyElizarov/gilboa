@@ -13,40 +13,42 @@
 
 
     .first-stage-conditions-list {
-        // display: grid;
         display: flex;
-        // grid-template-columns: repeat(5, 1fr);
-        // gap: rem(16px);
+        gap: rem(16px);
         margin-bottom: rem(35px);
+        flex-wrap: wrap;
 
         .first-stage-condition-preview {
             padding: rem(34px) rem(26px) rem(33.5px) rem(24px);
             background-color: white;
             width: rem(227px);
             height: rem(329px);
-            // flex-grow: 1;
 
             h3 {
                 color: $app-orange;
                 font-size: rem(30px);
                 margin-top: rem(15px);
+                margin-bottom: rem(1px);
             }
 
             img {
                 height: rem(62px);
             }
 
-           
         }
     }
-    
+
     .actions {
         display: flex;
         flex-direction: column;
 
         label {
             margin-bottom: rem(35px);
-            width: rem(135px);
+
+            span {
+                font-size: rem(30px);
+                margin-right: rem(14px);
+            }
         }
 
         @include app-checkbox($size: 30px);
