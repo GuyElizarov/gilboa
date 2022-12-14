@@ -3,8 +3,10 @@
 
     p {
         max-width: rem(1180px);
-        font-size: rem(20px);
+        font-size: rem(30px);
         margin-top: rem(53px);
+        margin-top: rem(53px);
+        margin-bottom: rem(36px);
     }
 
     .questionnaire-list {
@@ -13,27 +15,31 @@
         flex-wrap: wrap;
 
         .questionnaire-card {
-            flex-grow: 1;
             background-color: #fff;
-            width: rem(387px);
+            width: rem(386px);
             height: rem(328px);
             padding: rem(33px) rem(25px);
 
             h1 {
                 color: $app-orange;
-                font-size: 29.65px;
-                padding-top: 18px;
+                font-size: rem(29.65px);
+                margin-top: rem(18px);
             }
 
             .questions {
-                padding-top: rem(4.5px);
+                margin-top: rem(20px);
                 @include app-checkbox;
+                gap: 10px;
+                label{
+                    gap: rem(11px);
+                    justify-content: flex-start;
+                }
             }
         }
     }
 
     button {
         @include button;
-        margin-top: rem(77px);
+        margin-top: rem(63px);
     }
 }
