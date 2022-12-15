@@ -3,6 +3,7 @@ import { FirstStage } from '../cmps/home/first-stage'
 import { SecondStage } from '../cmps/home/second-stage'
 import { ThirdStage } from '../cmps/home/third-stage'
 import { ForthStage } from '../cmps/home/forth-stage'
+import { FifthStage } from '../cmps/home/fifth-stage'
 
 import { AdoptionStages } from '../interface/home/home-interface'
 import { useState } from 'react'
@@ -15,11 +16,12 @@ export const Home = () => {
 
         return <>
 
-                {adoptionProcessStage === 'first' && <FirstStage setAdoptionProcessStage={setAdoptionProcessStage} />}
+                {/* {adoptionProcessStage === 'first' && <FirstStage setAdoptionProcessStage={setAdoptionProcessStage} />}
                 {adoptionProcessStage === 'second' && <SecondStage setAdoptionProcessStage={setAdoptionProcessStage} />}
                 {adoptionProcessStage === 'third' && <ThirdStage setAdoptionProcessStage={setAdoptionProcessStage} />}
                 {adoptionProcessStage === 'forth' && <ForthStage setAdoptionProcessStage={setAdoptionProcessStage} />}
-                <ThirdStage setAdoptionProcessStage={setAdoptionProcessStage} />
-
+                {adoptionProcessStage === 'fifth' && <FifthStage />} */}
+                {/* <ThirdStage setAdoptionProcessStage={setAdoptionProcessStage} /> */}
+                <FifthStage />
         </>
 }
