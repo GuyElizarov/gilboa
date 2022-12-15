@@ -17,6 +17,6 @@ export type PreviewTypes = 'dog' | 'questionnaire' | 'condition'
 export interface FifthStageQuestionnaire {
     id: string;
     question: string;
-    answer: null | 'yes' | 'no';
+    answer: null | 'כן' | 'לא';
 
 }
