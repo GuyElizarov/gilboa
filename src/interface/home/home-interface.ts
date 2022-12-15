@@ -14,4 +14,9 @@ export type AdoptionStages = 'first' | 'second' | 'third' | 'forth' | 'fifth'
 
 export type PreviewTypes = 'dog' | 'questionnaire' | 'condition'
 
+export interface FifthStageQuestionnaire {
+    id: string;
+    question: string;
+    answer: null | 'כן' | 'לא';
 
+}

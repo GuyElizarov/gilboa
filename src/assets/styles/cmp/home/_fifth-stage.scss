@@ -1,0 +1,28 @@
+.fifth-stage {
+
+    .fifth-stage-list {
+        gap: rem(65.75px);
+        margin-top: rem(59px);
+        margin-bottom: rem(55.75px);
+
+        .fifth-stage-preview {
+            gap: rem(28px);
+
+            span {
+                font-size: rem(30px);
+            }
+
+            .button-container {
+                gap: rem(35px);
+                button{
+                    @include button($width: rem(135px), $height: rem(66.25px), $border-radius: 25px);
+                }
+            }
+        }
+    }
+
+    .last-msg {
+        font-family: 'assistant-bold';
+        font-size: rem(57.53px);
+    }
+}

@@ -1,4 +1,4 @@
-import { Condition, QuestionnaireCard } from "../interface/home/home-interface";
+import { Condition, QuestionnaireCard , FifthStageQuestionnaire } from "../interface/home/home-interface";
 import HomeImg from '../assets/imgs/stage1/home.png'
 import AgeImg from '../assets/imgs/stage1/age.png'
 import LocationImg from '../assets/imgs/stage1/location.png'
@@ -72,4 +72,27 @@ export const forthStageQuestionnaireData: QuestionnaireCard[] = [
         answers: ['מגודרת', 'לא מגודרת', 'אין לי חצר']
     },
 
+]
+
+export const fifthStageQuestionnaireData: FifthStageQuestionnaire[] = [
+    {
+        id: '101',
+        question: 'הכלב שבחרת צריך להיות מחוץ לבית X פעמים ביום. האם ברצונך להמשיך?',
+        answer: null
+    },
+    {
+        id: '102',
+        question: 'האם אתם פתוחים לאפשרות לאמץ זוג כלבים שכבר מחוברים? ',
+        answer: null
+    },
+    {
+        id: '103',
+        question: 'האם גידלת בעבר כלב מאחד הגזעים ה"מסוכנים" (*)? ',
+        answer: null
+    },
+    {
+        id: '104',
+        question: 'האם אתה מכיר את חוק הגזעים ה"מסוכנים" (למי שבחר גזע מסוכן ) (*)?',
+        answer: null
+    }
 ]

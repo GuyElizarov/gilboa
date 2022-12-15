@@ -27,24 +27,6 @@
         minmax($layoutPadding, 1fr) minmax(auto, $max) minmax($layoutPadding, 1fr);
 }
 
-@mixin button($padding-height: 10px, $font-size: rem(30px), $padding-width: 30px, $background-color: $app-orange, $text-clr: white) {
-    background-color: $background-color;
-    padding: rem($padding-height) rem($padding-width);
-    font-size: $font-size;
-    background-color: $background-color;
-    color: $text-clr;
-    border: none;
-    border-radius: 15px;
-    font-size: rem(30px);
-    width: rem(318px);
-    height: rem(66.25px);
-
-    &:hover,
-    &:active {}
-
-    transition: all 300ms;
-}
-
 @mixin mobile-layout {
     @media (max-width: 400px) {
         @content;
@@ -69,59 +51,6 @@
     }
 }
 
-
-// @mixin app-checkbox ($size: rem(21px)) {
-//     label {
-
-//         display: flex;
-//         align-items: center;
-
-//         input[type='checkbox'].app-checkbox {
-//             appearance: none;
-//             -webkit-appearance: none;
-//             border: 1px solid #d5d5d5;
-//             height: $size;
-//             position: relative;
-//             width: $size;
-//             background-color: white;
-//             cursor: pointer;
-//             display: flex;
-//             align-items: center;
-//             justify-content: center;
-
-//             &:after {
-//                 content: 'v';
-//                 position: absolute;
-//                 transform: translateY(-1px);
-//                 background-position: center;
-//                 background-size: cover;
-//                 background-size: auto 100%;
-//                 font-size: $size;
-//                 font-weight: bold;
-//                 background-repeat: no-repeat;
-//                 display: none;
-//                 color: white;
-//             }
-
-//             &:hover {
-//                 background-color: #d5d5d5;
-//             }
-
-//             &:checked {
-//                 background-color: #26C6DA;
-//                 border-color: #26C6DA;
-//             }
-
-//             &:checked:after {
-//                 display: flex;
-//             }
-//         }
-//     }
-
-
-
-
-// }
 
 @mixin app-checkbox ($size: rem(21px)) {
     label {
@@ -171,4 +100,17 @@
 
 
     }
+}
+
+
+@mixin button($font-size: rem(30px), $background-color: $app-orange, $border-radius: 15px,
+    $text-clr: white, $width: rem(318px), $height: rem(66.25px)) {
+    background-color: $background-color;
+    font-size: $font-size;
+    color: $text-clr;
+    border: none;
+    border-radius: $border-radius;
+    width: $width;
+    height: $height;
+    transition: all 300ms;
 }
