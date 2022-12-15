@@ -29,24 +29,72 @@
         }
 
         .actions {
+            outline-style: 1px;
+            border-top: none;
+            // border-bottom-left-radius: 25px;
+            // border-bottom-right-radius: 25px;
+            width: 100%;
             display: flex;
-            flex-grow: 1;
             flex-direction: column;
+            flex-wrap: wrap;
+            flex-grow: 1;
 
-            &>* {
-                height: 50%;
-                width: 100%;
-
-            }
-
-            .bottom-actions {
+            .top-buttons,
+            .bottom-buttons {
                 display: flex;
+                flex-grow: 1;
 
                 &>* {
+                    border: 1px solid $app-orange;
                     flex-grow: 1;
+                    background-color: inherit;
+                    border-left: none;
                     display: flex;
                     justify-content: center;
                     align-items: center;
+
+                    img {
+                        // width: rem(32px);
+                        height: rem(32px);
+                        object-fit: contain;
+                    }
+
+                    span {
+                        margin-right: 10px;
+                        font-size: 1rem;
+                        height: fit-content;
+                    }
+                }
+
+                button:last-of-type {
+                    border-left: 1px solid $app-orange;
+                    // text-align: center;
+
+                }
+
+            }
+
+            .top-buttons {
+                button {
+
+                    border-top: none;
+                }
+            }
+
+            .bottom-buttons {
+                border-bottom-right-radius: 25px;
+                border-bottom-left-radius: 25px;
+
+                button {
+                    border-top: none;
+
+                    &:first-of-type {
+                        border-bottom-right-radius: 25px;
+                    }
+
+                    &:last-of-type {
+                        border-bottom-left-radius: 25px;
+                    }
                 }
             }
         }
