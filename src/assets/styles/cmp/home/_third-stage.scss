@@ -1,3 +1,91 @@
+.third-stage-dog-filter {
+    margin-bottom: 20px;
+    margin-top: rem(53px);
+
+    .subject-list {
+        display: flex;
+        gap: rem(17px);
+
+
+        .filter-card {
+            flex-grow: 1;
+            // height: rem(45.33px);
+            background-color: white;
+            border-radius: rem(10px);
+            position: relative;
+
+            width: rem(227px);
+
+            &>* {
+                // flex-grow: 1;
+            }
+
+            height: fit-content;
+
+            .topic-wrapper {
+
+                display: flex;
+                align-items: center;
+                height: rem(45.33px);
+                justify-content: space-between;
+                padding: rem(10px) rem(25px);
+
+                outline: 1px solid $app-orange;
+                border-radius: rem(10px);
+                font-size: 1rem;
+                color: $app-orange;
+                width: 100%;
+
+                span {
+                    // flex-grow: 1;
+                }
+
+                svg {
+                    // transform: rotateZ(180deg);
+                }
+
+                &.is-answered {
+                    outline-color: $app-blue;
+                    color: $app-blue;
+                }
+
+            }
+
+            ul {
+                padding: 0;
+                margin: 0;
+                position: absolute;
+                z-index: 1;
+                background-color: white;
+                top: 0;
+                border-radius: 0;
+                width: 100%;
+                outline: 1px solid white;
+
+                li {
+                    padding: rem(10px) rem(25px);
+
+                    &:first-of-type {
+                        display: flex;
+                        justify-content: space-between;
+                        color: $app-orange;
+                    }
+
+                    &:hover:not(:first-of-type) {
+                        color: $app-blue;
+                        font-family: assistant-bold;
+                    }
+
+                    &.chosen {
+                        color: $app-blue;
+                    }
+                }
+            }
+
+        }
+    }
+}
+
 .third-stage-dog-list {
     display: grid;
     gap: rem(16px);
@@ -5,7 +93,7 @@
 
     .dog-preview {
         background-color: white;
-        max-width: rem(387px);
+        // max-width: rem(387px);
         // min-width: rem(387px);
         height: rem(386.95px);
         overflow: hidden;
@@ -15,6 +103,7 @@
         // border-radius: 15px;
 
         .dog-image-wrapper {
+            position: relative;
             width: 100%;
             height: rem(257px);
 
@@ -23,6 +112,21 @@
                 width: 100%;
                 height: 100%;
                 object-fit: cover;
+
+            }
+
+            span {
+                position: absolute;
+                bottom: rem(9px);
+                right: 0;
+                background-color: $app-orange;
+                // width: rem(100px);
+                height: rem(40px);
+                // font-weight: 700;
+                font-family: assistant-bold;
+                color: white;
+                padding-inline-start: rem(25px);
+                padding-left: rem(15px);
 
             }
 
@@ -55,7 +159,9 @@
 
                     img {
                         // width: rem(32px);
-                        height: rem(32px);
+                        height: rem(35px);
+                        width: rem(35px);
+
                         object-fit: contain;
                     }
 
@@ -90,6 +196,21 @@
 
                     &:first-of-type {
                         border-bottom-right-radius: 25px;
+                        position: relative;
+
+                        .full-heart {
+                            // display: none;
+                            position: absolute;
+                            opacity: 0;
+                            transform: scale(0);
+
+                            &.is-full {
+                                opacity: 1;
+                                transform: scale(1);
+                            }
+
+                            transition: all ease 0.2s;
+                        }
                     }
 
                     &:last-of-type {

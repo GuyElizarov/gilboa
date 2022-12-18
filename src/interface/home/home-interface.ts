@@ -20,3 +20,20 @@ export interface FifthStageQuestionnaire {
     answer: null | 'כן' | 'לא';
 
 }
+
+export interface FilterCard {
+    topic: string
+    answer: string
+    options: string[]
+    filterTitle: string
+}
+
+export interface FilterBy {
+    [key: string]: string
+    sex: string,
+    ageRange: string,
+    sizeAndWeight: string,
+    breed: string,
+    willAdoptTwo: string
+
+}
