@@ -6,7 +6,7 @@ export interface Dog {
         imgs: string[];
     };
     age: number;
-    sex: 'male' | 'female';
+    sex: 'זכר' | 'נקבה';
     weightKG: number;
     bread: string;
     isDangerous: boolean;

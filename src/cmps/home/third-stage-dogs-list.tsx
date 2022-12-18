@@ -1,4 +1,4 @@
-import { Dog } from "../../interface/shared/dogs-interface"
+import { Dog } from "../../interface/dog.interface"
 import { ThirdStageDogPreview } from './third-stage-dog-preview'
 
 export const ThirdStageDogsList = ({ dogs }: { dogs: Dog[] }) => {
